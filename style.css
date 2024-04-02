@@ -6,6 +6,25 @@
   list-style: none;
 }
 
+span{
+  background-color: #f57758;
+  text-decoration: underline;
+}
+
+.aba{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f57758;
+    color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    z-index: 9999;
+    cursor: pointer;
+
+}
+
 header{
   position: relative;
   width: 80%;
@@ -188,7 +207,7 @@ button{
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background: #e4e4e4;
-  transition: all .3s ease;
+  transition: all 0.2s ease;
 }
 
 .btn:hover{
@@ -251,7 +270,21 @@ footer li, footer ul, footer i{
 }
 
 @media(max-width:750px){
+  
   .conteudo{
+    width: 100%;
+  }
+  footer{
+    width: 100%;
+  }
+}
+
+@media(max-width: 480px){
+  header{
+    width: 20%;
+  }
+  
+  .galeria{
     width: 100%;
   }
   footer{
